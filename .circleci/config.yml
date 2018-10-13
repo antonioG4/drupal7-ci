@@ -1,0 +1,11 @@
+###
+#
+# CircleCI Config for Drupal 7
+#
+##
+
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/drupal:7
