@@ -8,7 +8,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/drupal:7
+      - image: drupal:7
       - image: drush/drush:8
     working_directory: /var/www/html
 
