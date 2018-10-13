@@ -9,3 +9,11 @@ jobs:
   build:
     docker:
       - image: circleci/drupal:7
+      - image: drush/drush:8
+    working_directory: /var/www/html
+
+    steps:
+      - checkout
+
+      # run tests!
+      - run: phpunit
